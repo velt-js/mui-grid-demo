@@ -13,7 +13,6 @@ export const VeltCommentableCellWithBubble: React.FC<VeltCommentableCellProps> =
   params,
   children,
 }) => {
-  const elementId = `cell-${params.field}-${params.id}`
 
   return (
     <div style={{ position: "relative" }} className="group w-full">
