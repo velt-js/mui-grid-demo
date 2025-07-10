@@ -18,7 +18,7 @@ export const VeltCommentableCellWithoutBubble: React.FC<VeltCommentableCellProps
   return (
     <div id={elementId} style={{ position: "relative" }} className="group w-full">
       {children}
-      <div className="invisible group-hover:visible">
+      <div className="absolute top-0 right-0 invisible group-hover:visible">
         <VeltCommentTool targetElementId={elementId} />
       </div>
     </div>

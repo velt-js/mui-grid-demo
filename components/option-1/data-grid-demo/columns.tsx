@@ -32,6 +32,8 @@ export const columns: GridColDef[] = [
     headerName: "Age",
     type: "number",
     width: 90,
+    align: "left",
+    headerAlign: "left",
     renderCell: (params: GridRenderCellParams) => (
       <VeltCommentableCellWithoutBubble params={params}>{params.value}</VeltCommentableCellWithoutBubble>
     ),
@@ -68,6 +70,8 @@ export const columns: GridColDef[] = [
     headerName: "Salary",
     type: "number",
     width: 120,
+    align: "left",
+    headerAlign: "left",
     valueFormatter: (value: number) => {
       if (typeof value === "number") {
         return `$${value.toLocaleString()}`
