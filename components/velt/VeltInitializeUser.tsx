@@ -10,7 +10,7 @@ export default function VeltInitializeUser() {
     email: 'john@example.com',
     color: '#FF5733',
     textColor: '#FFFFFF',
-    organizationId: 'complex-data-org-1'
+    organizationId: 'mui-data-grid-org-1'
   };
 
   // Initialize Velt with user info and token

@@ -6,9 +6,9 @@ export default function VeltInitializeDocument() {
   const { setDocuments } = useSetDocuments();
   const document = useMemo(() => [
     {
-      id: 'complex-data-document-1',
+      id: 'mui-data-grid-document-1',
       metadata: {
-        documentName: 'Complex Data'
+        documentName: 'MUI Data Grid'
       }
     },
   ], []);
