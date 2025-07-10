@@ -27,6 +27,7 @@ export const VeltCollaboration = () => {
         enterKeyToSubmit={true}
         shadowDom={false}
         priority={true}
+        groupMatchedComments={true}
         popoverTriangleComponent={!onOption2}
       />
       <VeltCommentsSidebar pageMode={true} />
