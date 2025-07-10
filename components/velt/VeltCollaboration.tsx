@@ -29,7 +29,7 @@ export const VeltCollaboration = () => {
         priority={true}
         popoverTriangleComponent={!onOption2}
       />
-      <VeltCommentsSidebar />
+      <VeltCommentsSidebar pageMode={true} />
       <VeltInitializeDocument />
       <VeltCustomization />
     </>

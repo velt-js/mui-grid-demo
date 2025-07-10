@@ -7,7 +7,7 @@ import { CssBaseline, Container, Typography, Box } from "@mui/material"
 import { generateLargeDataset, type Row } from "./data"
 import { columns } from "./columns"
 import { useState } from "react"
-import { VeltSidebarButton } from "@veltdev/react"
+import VeltNavTools from "../../velt/VeltNavTools"
 
 const theme = createTheme({
   palette: {
@@ -23,9 +23,7 @@ export default function DataGridDemo() {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Container maxWidth="lg" sx={{ py: 4 }}>
-          <Box sx={{ display: "flex", justifyContent: "flex-end" }}>
-            <VeltSidebarButton />
-          </Box>
+          <VeltNavTools />
           <Box sx={{ mb: 4 }}>
             <Typography variant="h3" component="h1" gutterBottom>
               MUI X Data Grid - Virtualization Demo
