@@ -16,10 +16,12 @@ export const VeltCommentableCellWithBubble: React.FC<VeltCommentableCellProps> =
   const elementId = `cell-${params.field}-${params.id}`
 
   return (
-    <div id={elementId} style={{ position: "relative" }} className="group w-full">
+    <div id={elementId} style={{ position: "relative" }} className="group w-full flex items-center justify-between">
       {children}
-      <div className="absolute top-0 right-0">
-        <VeltCommentTool targetElementId={elementId} />
+      <div className="flex">
+        <div className="flex opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+            <VeltCommentTool targetElementId={elementId} />
+        </div>
         <VeltCommentBubble targetElementId={elementId} />
       </div>
     </div>

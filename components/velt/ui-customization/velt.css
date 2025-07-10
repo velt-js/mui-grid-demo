@@ -46,3 +46,8 @@ velt-comment-tool, velt-notifications-tool {
 .velt-sidebar-button--comments-count {
     min-width: auto !important;
 }
+
+
+.velt-comment-tool {
+    display: flex !important;
+}
